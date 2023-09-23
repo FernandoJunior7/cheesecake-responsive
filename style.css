@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* Não consigo ver essa diferença kkk */
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: "Source Serif Pro";
+}
+
+body {
+  color: #a54328;
+}
+
+main {
+  max-width: 20rem;
+  /* Que porra é essa? Bota a margin nas laterais */
+  margin-inline: auto;
+  padding: 3.5rem 2.5rem;
+  /* hmmm */
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+img {
+  width: 100%;
+  /* Bota margin em cima e embaixo */
+  margin-block: 2rem;
+}
+
+button {
+  font-family: "Source Serif 4";
+  color: white;
+
+  background-color: #a54328;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  margin-top: 2rem;
+}
+
+h1,
+h2 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+p,
+li,
+strong {
+  font-size: 0.875rem;
+}
+
+strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+ul {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1141px) {
+  main {
+    /* Como funciona? */
+    max-width: fit-content;
+
+    flex-direction: row;
+    gap: 10rem;
+
+    padding: 3.625rem 3.75rem;
+    align-items: stretch;
+  }
+
+  .recipe {
+    max-width: 27.1875rem;
+  }
+
+  .ingredients {
+    max-width: 32.8125rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+  }
+
+  p,
+  li,
+  strong {
+    font-size: 1.25rem;
+    line-height: 1.5625rem;
+  }
+
+  strong {
+    display: inline;
+  }
+
+  button {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+
+    margin-top: 1rem;
+  }
+}
